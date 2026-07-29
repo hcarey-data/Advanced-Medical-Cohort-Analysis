@@ -18,6 +18,8 @@ This analysis project works to understand risk spread and risk customers by divi
 the average charge for all the smokers in the dataset is about $32,000, while for non smokers, it's just around $8,500, around four times less than non-smokers.
 Patients living in the southeast portion of the United States get charged the most on average. Men living in the southeast United States tend to have the highest bmi of 53.13. 
 
+![Executive Summary](Medical_Executive_Summary.png)
+
 The data is further divided into cohorts within SQL Server for deeper insights. For instance, there are cohorts for age bands, bmi risk groups, dependency bands (which are based on how many children a patient has), insurance charge distribution cohorts, how those distributions rank, and the top charge contributors. This segmentation will help understand which groups are contributing the most charge-wise and who are most at risk health-wise.
 
 'Insurance Cohort Comparisons.sql' calculates additional metrics for each cohort created earlier. Univariate and multivariate analysis are performed for each as percentiles, maximums, mininums, standard deviations, are all considered. 'Cohort Summary Tables.sql' and `Dimensions.sql` are additonal queries for providing summary statistics and fact and dimension table structuring. 
@@ -35,6 +37,8 @@ Pricing Adequacy and Underwriting Profitability deals with "What if?" scenarios.
 stakeholders get an idea of how charges and different variables will change under certain conditions. The average charges and charge standard deviations are calculated for the different cohorts. Under this hypothetical premium amount, the corresponding pricing can be judged accordingly for each patient segment.
 
 Risk scoring & Governance plays a similar role. It assigns a risk tier for each patient based on their age, bmi, dependency rating, smoker status, and charge percentile. The different tiers are "low", "medium", "high", and "very high". Those patients with a "high" or "very high" risk tier would in turn be of more risk to the insurance company in filing a claim in the near future. Average charges, charge standard deviation, and policy counts are calculated for each tier as well along with slicers for more filtered analysis.
+
+![Medical Risk Scoring and Governance](Medical_Risk_Scoring_and_Governance.png)
 
 ## Insights and Recommendations
 
