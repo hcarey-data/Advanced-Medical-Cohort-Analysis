@@ -16,9 +16,7 @@ This analysis project works to understand risk spread and risk customers by divi
 
 -- There are a total of about 274 patient smokers and 1064 patient non-smokers. The minimum patient age is 18 while the maximum patient age is 64. For example, 
 the average charge for all the smokers in the dataset is about $32,000, while for non smokers, it's just around $8,500, around four times less than non-smokers.
-Patients living in the southeast portion of the United States get charged the most on average. Men living in the southeast United States tend to have the highest bmi of 53.13. 
-
-![Executive Summary](Medical_Executive_Summary.png)
+Patients living in the southeast portion of the United States get charged the most on average. Men living in the southeast United States tend to have the highest bmi of 53.13.
 
 The data is further divided into cohorts within SQL Server for deeper insights. For instance, there are cohorts for age bands, bmi risk groups, dependency bands (which are based on how many children a patient has), insurance charge distribution cohorts, how those distributions rank, and the top charge contributors. This segmentation will help understand which groups are contributing the most charge-wise and who are most at risk health-wise.
 
@@ -28,6 +26,8 @@ The data is further divided into cohorts within SQL Server for deeper insights. 
 ## Visualizations Overview
 
 Visualizations are provided through 'Medical Insurance Project Visualization' PowerBI file. In the executive summary, we see that there are $17.75 million in charges across the entire dataset. The smoker-to-non-smoker ratio is 20%, and 1337 patients are insured overall. From the bar charts, we see that patients residing in the southeast United States contribute the most charges (5.4M) . For BMI class, patients with Obese I and Obese Class II+ both contribute the most in charges overall (5.6M and 5.5M respectively). 
+
+![Executive Summary](Medical_Executive_Summary.png)
 
 Another important insight involves top performers and lost distribution. 4% of patients contribute to the top 1% of insurance charges. Smokers contribute to the higher groups of charges overall. The majority charges themselves range up to 10k, with smaller amounts going all the way up to 60k. More Obese and overweight patients contribute on the higher end of the charge spectrum as well. 
 
